@@ -72,7 +72,10 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;
-    background: #f898;
+    background: url(../img/showcase_1.jpg) no-repeat center fixed;
+    color: #fff;
+    text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
    
    
 }
@@ -85,6 +88,7 @@ header a:hover{
 
 #showcase p{
     font-size: 20px;
+    max-width: 75%;
 }
 
 /* Links */
@@ -114,8 +118,12 @@ header a:hover{
 #boxes .box{
     float:left;
     text-align: center;
-    width:30px;
+    width:28%;
     padding:10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    box-shadow: 5px 5px 5px grey;
+    border: 1px solid #E0E0E0;
     
 }
 
@@ -125,7 +133,7 @@ header a:hover{
 
 
 /* Sidebar */
-aside #sidebar{
+aside#sidebar{
     float:right;
     width:30%;
     margin-top: 10px;
@@ -136,27 +144,69 @@ aside #sidebar{
     padding: 5px;
 }
 */
-/* Main-col */
-article #main-col{
-    float:left;
-    width: 65%;
+/* cards */
+
+#main{
+    float: left;
+}
+#card-holder{
+   max-width: 75%;
+    margin: auto;
+}
+
+#card-holder h2{
+    border-bottom: 1px solid black;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: #35424a;
+    color: #fff;
+}
+
+#card_info{
+    margin:auto;
+}
+
+.card h3{
+    margin-bottom: 2rem; 
+}
+
+.card img{
+    max-width: 300px;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
 }
 
 
+.btn_2{
+    display: block;
+    width:85%;
+    margin: auto;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: .5rem;
+    background: #e8491d;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card h3{
+    margin-top: 0;
+    margin-bottom: .2rem;
+}
 
 
 
